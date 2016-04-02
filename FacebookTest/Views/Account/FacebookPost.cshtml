@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "FacebookPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>FacebookPost</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <div class="editor-field">
+            <textarea name="txtMessage"></textarea>
+        </div>
+        <p>
+            <input type="submit" value="Post" />
+        </p>
+    </fieldset>
+}
